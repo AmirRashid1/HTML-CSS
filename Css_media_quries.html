@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css media quries</title>
+    <style>
+        /* @media print{           /*it will print when you press print i,e color will show when you will print */
+            /* h1{
+                color: red;
+            } */
+        /* } */
+
+        @media (max-width:390px)       /*it is uses for to make website responsive*/ 
+        {
+            h1{
+                color: red;
+                font-size: 60px;
+            }
+        }
+        @media (min-width:390px)and (max-width:900px) {
+            h1{
+                color: cornflowerblue;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    
+</body>
+</html>

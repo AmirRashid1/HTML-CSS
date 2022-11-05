@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Combining Selectors </title>
+    <style>
+        h1,
+        h2,
+        h3 {
+            color: rgb(74, 12, 118);
+            font-size: 2rem;
+            /*rem is best when you zoom the keys i,e: Ctrl+; */
+        }
+        .sem, #sel         /*css combining selectors*/
+        {
+            color: rgb(33, 142, 76);
+        }
+
+        div   /*selector has low prority than id and class*/
+        {
+            color: aqua;
+        }
+        #pro           /*id has high prority than class has high prority than other than selectotr i,e: div is selector and pro is class*/
+        {
+            color: blue;
+        }
+        .pro         /*class has low prority than id and class has high prority than seclectors*/
+        {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>my</h1>
+    <h2>my</h2>
+    <h3>my</h3>
+
+    <p id="sel">
+        Lorem1! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, quasi!
+    </p>
+    <p class="sem">
+       Lorem2! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor officiis magni beatae officia soluta vel. Odit
+        adipisci culpa voluptates distinctio.
+    </p>
+
+    <div id="pro" class="pro">
+        My name is ...
+    </div>
+</body>
+
+</html>
